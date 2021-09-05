@@ -45,7 +45,7 @@ $ dpkg -i node_exporter.deb
 ### Look at the service status at the end:
 
 ```bash
-$ ~  zibil systemctl status node_exporter.service
+$ ~ systemctl status node_exporter.service
 ● node_exporter.service - Node Exporter
      Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; vendor preset: enabled)
      Active: active (running) since Sun 2021-09-05 16:09:14 +04; 16min ago
