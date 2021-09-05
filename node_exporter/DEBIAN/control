@@ -1,0 +1,9 @@
+Package: node-exporter
+Version: 1.2.2
+Section: custom
+Priority: optional
+Architecture: amd64
+Essential: no
+Installed-Size: 20M
+Maintainer: Jamal.Shahverdiyev
+Description: Prometheus Node Exporter Debian package
