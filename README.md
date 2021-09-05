@@ -24,25 +24,25 @@
 5 directories, 4 files
 ```
 
-### Install needed package to prepare debian based `.deb` files
+#### Install needed package to prepare debian based `.deb` files
 
 ```bash
 $ apt-get install build-essential
 ```
 
-### Create deb package from `node_exporter` folder(command creates `node_exporter.deb` in the output)
+#### Create deb package from `node_exporter` folder(command creates `node_exporter.deb` in the output)
 
 ```bash
 $ dpkg-deb --build node_exporter
 ```
 
-### Install created package (This command firsly create `/etc/systemd/system` directory and copies `node_exporter.service` file inside of this folder. Then it will execute `postinst` script to download `node_exporter` binary file and place into `/usr/sbin` folder. At the end script start service and delete unnneded files.)
+#### Install created package (This command firsly create `/etc/systemd/system` directory and copies `node_exporter.service` file inside of this folder. Then it will execute `postinst` script to download `node_exporter` binary file and place into `/usr/sbin` folder. At the end script start service and delete unnneded files.)
 
 ```bash
 $ dpkg -i node_exporter.deb
 ```
 
-### Look at the service status at the end:
+#### Look at the service status at the end:
 
 ```bash
 $ ~ systemctl status node_exporter.service
